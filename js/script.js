@@ -9,5 +9,17 @@ $(document).ready(function() {
        });
        return false;
     });
+
+    $(".block1__btn").click(function() {
+      $(".block1__info").addClass('show');
+      $(".block1__btn").addClass('d-none');
+      $(".close").addClass('d-block');
+    });
+
+    $(".close").click(function() {
+      $(".block1__info").removeClass('show');
+      $(".block1__btn").removeClass('d-none');
+      $(".close").removeClass('d-block');
+    });
   
  });

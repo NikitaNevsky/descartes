@@ -36,6 +36,14 @@ a {
   margin: 0 auto;
 }
 
+.d-none {
+  display: none!important;
+}
+
+.d-block {
+  display: block!important;
+}
+
 .header {
   border-bottom: 2px solid #fff;
   padding: 10px 0;
@@ -167,7 +175,18 @@ a {
 
 .block1 {
   margin: 130px auto 130px;
-  max-width: 600px;
+  max-width: 1120px;
+}
+
+.block1__info {
+  max-height: 80px;
+  overflow: hidden;
+  transition: max-height 0.5s cubic-bezier(0, 1, 0, 1);
+}
+
+.block1__info.show {
+  max-height: max-content;
+  transition: max-height 1s;
 }
 
 .block1__title {
@@ -188,7 +207,7 @@ a {
 
 .block1__text {
   line-height: 1.5;
-  max-width: 600px;
+  max-width: 100%;
   margin-bottom: 30px;
 }
 
@@ -450,7 +469,6 @@ p {
 
 .evaluate__info {
   max-width: 663px;
-  justify-content:;
 }
 
 .evaluate__text {
@@ -735,4 +753,9 @@ select {
 
 .footer__social a:hover {
   opacity: 0.5;
+}
+
+.close {
+  display: none;
+  background: transparent;
 }
