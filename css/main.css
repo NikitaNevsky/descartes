@@ -1022,3 +1022,142 @@ input:checked + .tab-label span {
 input:checked ~ .tab-content {
   max-height: 100vh;
 }
+
+.simply {
+  padding: 70px 200px 75px;
+  background: url('../img/Lines.svg') no-repeat 0 280px;
+  min-height: 1100px;
+}
+
+.simply__title {
+  font-size: 45px;
+  font-weight: 600;
+  text-transform: uppercase;
+  max-width: 400px;
+  margin-bottom: 30px;
+}
+
+.simply__btn {
+  font-weight: 500;
+}
+
+.simply__list {
+  position: relative;
+}
+
+.simply__item {
+  font-size: 20px;
+  text-align: center;
+  font-weight: bold;
+  padding: 47px 13px;
+  min-width: 190px;
+  border: 3px solid #fff;
+  background: #000000;
+  border-radius: 15px;
+  width: max-content;
+  position: absolute;
+  transition: all 0.3s ease;
+}
+
+.simply__item:nth-child(1) {
+  left: 557px;
+  top: 140px;
+}
+
+.simply__item:nth-child(2) {
+  left: 233px;
+  top: 340px;
+}
+
+.simply__item:nth-child(3) {
+  left: 715px;
+  top: 400px;
+}
+
+.simply__item:nth-child(4) {
+  left: 367px;
+  top: 590px;
+}
+
+.simply__item:before {
+  content: '';
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  bottom: 5px;
+  left: 15px;
+  background: url('../img/simply_arrow.svg') no-repeat;
+}
+
+.simply__item:nth-child(1):before {
+  left: auto;
+  right: 15px;
+  -moz-transform: scale(-1, 1);
+    -o-transform: scale(-1, 1);
+    -webkit-transform: scale(-1, 1);
+    transform: scale(-1, 1);
+}
+
+.simply__item:nth-child(3):before {
+  left: auto;
+  right: 15px;
+  -moz-transform: scale(-1, 1);
+    -o-transform: scale(-1, 1);
+    -webkit-transform: scale(-1, 1);
+    transform: scale(-1, 1);
+}
+
+.simply__item:hover {
+  color: #00FC90;
+  background: rgba(255, 255, 255, 0.3);
+  backdrop-filter: blur(4px);
+}
+
+.simply__item:hover:before {
+  content: none;
+}
+
+.simply__item span {
+  position: absolute;
+  font-weight: 400;
+  padding: 22px 25px;
+  border: 3px solid #ffffff;
+  border-radius: 15px;
+  text-align: left;
+  font-size: 18px;
+  line-height: 27px;
+  color: #000000;
+  background: rgba(255, 255, 255, 0.8);
+  backdrop-filter: blur(4px);
+  z-index: 100;
+  opacity: 0;
+  transition: all 0.3s ease;
+}
+
+.simply__item:nth-child(1) span {
+  top: 69px;
+  left: 151px;
+  width: 477px;
+}
+
+.simply__item:nth-child(2) span {
+  top: 78px;
+  right: 90px;
+  width: 464px;
+}
+
+.simply__item:nth-child(3) span {
+  top: 93px;
+  left: 56px;
+  width: 450px;
+}
+
+.simply__item:nth-child(4) span {
+  top: 80px;
+  right: 139px;
+  width: 464px;
+}
+
+.simply__item:hover span {
+  opacity: 1;
+}
