@@ -21,5 +21,22 @@ $(document).ready(function() {
       $(".block1__btn").removeClass('d-none');
       $(".close").removeClass('d-block');
     });
+
+    $(".scroll__top").on("click", function() {
+      $("body").scrollTop(0);
+    });
+
+   $(window).scroll(function() {
+   var height = $(window).scrollTop();
+   
+         /*Если сделали скролл на 100px задаём новый класс для header*/
+      if(height > 100){
+      $('.scroll__top').addClass('show');
+      } else{
+            /*Если меньше 100px удаляем класс для header*/
+      $('.scroll__top').removeClass('show');
+      }
+   
+   });
   
  });
